@@ -99,6 +99,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="pages\admin\clientEdit.html" />
+    <Content Include="pages\admin\clientViewJobs.html" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
