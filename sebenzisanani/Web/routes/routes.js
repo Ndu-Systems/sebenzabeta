@@ -41,5 +41,13 @@
          templateUrl: 'pages/recrutement/jobs.html',
          controller: 'jobsController'
      })
+     .when('/jobs', {
+         templateUrl: 'pages/recrutement/jobs.html',
+         controller: 'jobsController'
+     })
+     .when('/admin-dashboard', {
+         templateUrl: 'pages/admin/admin-dashboard.html',
+         controller: 'administratorController'
+     })
 });
  
