@@ -49,5 +49,25 @@
          templateUrl: 'pages/admin/admin-dashboard.html',
          controller: 'administratorController'
      })
+     .when('/clients', {
+         templateUrl: 'pages/admin/clients.html',
+         controller: 'clientsController'
+     })
+     .when('/clientEdit', {
+         templateUrl: 'pages/admin/clientEdit.html',
+         controller: 'clientEditController'
+     })
+     .when('/clientViewJobs', {
+         templateUrl: 'pages/admin/clientViewJobs.html',
+         controller: 'clientViewJobsController'
+     })
+     .when('/candidatesList', {
+         templateUrl: 'pages/admin/candidatesList.html',
+         controller: 'candidatesListController'
+     })
+     .when('/candidateEdit', {
+         templateUrl: 'pages/admin/candidateEdit.html',
+         controller: 'candidateEditController'
+     })
 });
  
