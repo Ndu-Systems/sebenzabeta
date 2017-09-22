@@ -160,6 +160,7 @@
     <Content Include="pages\recrutement\candidates.html" />
     <Content Include="pages\recrutement\jobs.html" />
     <Content Include="pages\recrutement\recrutement.html" />
+    <Content Include="pages\recrutement\scrape.html" />
     <Content Include="routes\routes.js" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="sass\base\_base.scss" />

@@ -41,5 +41,9 @@
          templateUrl: 'pages/recrutement/jobs.html',
          controller: 'jobsController'
      })
+     .when('/scrape', {
+         templateUrl: 'pages/recrutement/scrape.html',
+         controller: 'scrapeController'
+     })
 });
  
