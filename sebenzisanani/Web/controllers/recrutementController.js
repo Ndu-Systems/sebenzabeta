@@ -33,7 +33,7 @@ app.controller('candidatesController', function ($http, $scope, $window) {
   
 });
 app.controller('recrutementController', function ($http, $scope, $window) {
-    // get  jobs
+    // get  jobs 
     var data = {
         table: "job",
         condition: " status = 'Open'"
