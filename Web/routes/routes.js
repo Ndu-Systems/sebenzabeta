@@ -61,6 +61,10 @@
          templateUrl: 'pages/admin/clientViewJobs.html',
          controller: 'clientViewJobsController'
      })
+      .when('/jobAssignCandidate', {
+          templateUrl: 'pages/admin/jobAssignCandidate.html',
+          controller: 'jobAssignCandidateController'
+      })    
      .when('/candidatesList', {
          templateUrl: 'pages/admin/candidatesList.html',
          controller: 'candidatesListController'

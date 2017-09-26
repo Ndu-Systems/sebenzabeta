@@ -1,7 +1,7 @@
 ﻿<div class="content-lg container">
     <div class="myBox">
         <div>
-            <h1>Client <small>information</small></h1>           
+            <h1>{{companyName}} <small>information</small></h1>           
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -14,23 +14,23 @@
                             <tbody>
                                 <tr>
                                     <td>Name:</td>
-                                    <td>Apple</td>
+                                    <td>{{companyName}}</td>
                                 </tr>
                                 <tr>
                                     <td>Address:</td>
-                                    <td>United States</td>
+                                    <td>{{companyAddress}}</td>
                                 </tr>
                                 <tr>
                                     <td>Email:</td>
-                                    <td>john@example.com</td>
+                                    <td>{{companyEmail}}</td>
                                 </tr>
                                 <tr>
                                     <td>Contact Person:</td>
-                                    <td>Steven Works</td>
+                                    <td>{{contactPerson}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Telephon:</td>
-                                    <td>074502050</td>
+                                    <td>Telephone:</td>
+                                    <td>{{companyTel}}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -49,35 +49,22 @@
                             <th>Sector</th>
                             <th>Job Description</th>
                             <th>Experience</th>
+                            <th>Open Positions</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>12</td>
-                            <td>Information Technology</td>
-                            <td>Junior Developer</td>
-                            <td>3</td>
-                            <td><button type="submit" class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Information Technology</td>
-                            <td>Junior Developer</td>
-                            <td>3</td>
-                            <td><button type="submit" class="btn btn-primary">View</button></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Information Technology</td>
-                            <td>Junior Developer</td>
-                            <td>3</td>
-                            <td><button type="submit" class="btn btn-primary">View</button></td>
-                        </tr>
+                        <tr ng-repeat="job in jobs">
+                            <td>{{job.id}}</td>
+                            <td>{{job.catergorty}}</td>
+                            <td>{{job.description}}</td>
+                            <td>{{job.expirience}}</td>     
+                            <td>{{job.positions}}</td>                     
+                            <td><button type="submit" class="btn btn-primary" ng-click="assignCandidate(job)">Assign Candidate</button></td>
+                        </tr>                      
                     </tbody>
                 </table>
-            </div>       
-
+            </div>     
             <div class="clearfix"></div>
 
         </div>
