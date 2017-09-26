@@ -6,84 +6,45 @@
             <div class="row">
                 <div class="col-sm-12"><h1 style="text-align:center">CANDIDATES ON OFFER</h1></div>
             </div>
-            <div class="row" style="padding :1%; background-color: #d8d8d8; margin:1%">
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <input type="text" class="form-control myInputs" ng-model="searchJob" placeholder="Search Candidates">
+                    </form>
+                </div>
+            </div>
+            <div class="row" style="padding :1%; background-color: #d8d8d8; margin:1%" ng-repeat="candidate in candidatesLS | filter:searchJob">
 
                 <div class="col-md-2">
                     <img src="../../img/pp.png" alt="Nature" style="width:100%">
                 </div>
                 <div class="col-md-4">
-                    <b>Gender</b> : Male<br>
-                    <b>Age</b> : 25<br>
-                    <b>Citizenship</b> : South African<br>
-                    <b>Job sector</b> : Information Technology<br>
-                    <b>Company</b> : Nihilent Technology<br>
-                    <b>Job title</b> : .Net and Front End Developer<br>
-                    <b>Duration of employment</b> : 2015-Today<br>
-                    <b>Qualifications</b> :Degree	in Computer Science and InformationTechnology <b>(2014)</b><br>
+                    <br>
+                    <b>Gender</b> : {{candidate.gender}}<br>
+                    <b>Race</b> : {{candidate.race}}<br>
+                    <b>Age</b> : {{candidate.dob}}<br>
+                    <b>Citizenship</b> :{{candidate.citizenship}}<br>
+                    <b>Job sector</b> : {{candidate.job_sector}}<br>
+                    <b>Job title</b> : {{candidate.job_title}}<br>
 
                 </div>
                 <div class="col-md-4">
                     <h4>Job History</h4>
-                    <b>Nedbank (3 Year(s))</b> : Database manager<br>
-                    <b>Avis (1 Year(s))</b> :Web developer<br>
+                    <div class="history" ng-repeat="hs in candidate.history">
 
-
-                </div>
-
-            </div>        
-            <div class="row" style="padding :1%; background-color: #d8d8d8; margin:1%">
-
-                <div class="col-md-2">
-                    <img src="../../img/pp.png" alt="Nature" style="width:100%">
-                </div>
-                <div class="col-md-4">
-                    <b>Gender</b> : Male<br>
-                    <b>Age</b> : 25<br>
-                    <b>Citizenship</b> : South African<br>
-                    <b>Job sector</b> : Information Technology<br>
-                    <b>Company</b> : Nihilent Technology<br>
-                    <b>Job title</b> : .Net and Front End Developer<br>
-                    <b>Duration of employment</b> : 2015-Today<br>
-                    <b>Qualifications</b> :Degree	in Computer Science and InformationTechnology <b>(2014)</b><br>
-
-                </div>
-                <div class="col-md-4">
-                    <h4>Job History</h4>
-                    <b>Nedbank (3 Year(s))</b> : Database manager<br>
-                    <b>Avis (1 Year(s))</b> :Web developer<br>
-
-
-                </div>
-
-            </div>        
-            <div class="row" style="padding :1%; background-color: #d8d8d8; margin:1%">
-
-                <div class="col-md-2">
-                    <img src="../../img/pp.png" alt="Nature" style="width:100%">
-                </div>
-                <div class="col-md-4">
-                    <b>Gender</b> : Male<br>
-                    <b>Age</b> : 25<br>
-                    <b>Citizenship</b> : South African<br>
-                    <b>Job sector</b> : Information Technology<br>
-                    <b>Company</b> : Nihilent Technology<br>
-                    <b>Job title</b> : .Net and Front End Developer<br>
-                    <b>Duration of employment</b> : 2015-Today<br>
-                    <b>Qualifications</b> :Degree	in Computer Science and InformationTechnology <b>(2014)</b><br>
-
-                </div>
-                <div class="col-md-4">
-                    <h4>Job History</h4>
-                    <b>Nedbank (3 Year(s))</b> : Database manager<br>
-                    <b>Avis (1 Year(s))</b> :Web developer<br>
-
-
-                </div>
-
-            </div>               
-                      
-                
+                        <b>{{hs.company}}</b> <br>
+                        {{hs.start_date}} - {{hs.end_date}}<br>
+                        {{hs.job_duties}}<br>
                     </div>
 
-           </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
 
