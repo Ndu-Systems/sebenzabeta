@@ -29,17 +29,17 @@
                     if (role === "admin") {
                         localStorage.setItem("isAdminLoggedIn", true);
                         localStorage.setItem("adminEmail", email);
-                        $window.location.href = "/#admin-dashboard";
+                        $window.location.href = "#/admin-dashboard";
                     }
                     if (role === "company") {
                         localStorage.setItem("isCompanyLoggedIn", true);
                         localStorage.setItem("adminEmail", email);
-                        $window.location.href = "/#company-dashboard";
+                        $window.location.href = "#/company-dashboard";
                     }
                     if (role === "candidate") {
                         localStorage.setItem("isCandidateLoggedIn", true);
                         localStorage.setItem("adminEmail", email);
-                        $window.location.href = "/#candidate-dashboard";
+                        $window.location.href = "#/candidate-dashboard";
                     }
                 }
                 else {
