@@ -7,27 +7,25 @@
                 <div class="col-sm-12"><h1 style="text-align:center">CANDIDATES ON OFFER</h1></div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="background-color:#337ab7; padding:2%; margin:2%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <form>
                         <input type="text" class="form-control myInputs" ng-model="searchJob" placeholder="Search Candidates">
                     </form>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4" style="margin:2%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" ng-repeat="candidate in candidatesLS | filter:searchJob">
-                    <div class="row">
-                        <div class="col-12">
+                <div class="col-md-12" style="background-color:#d6d9da; padding:1%; margin:2%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" ng-repeat="candidate in candidatesLS | filter:searchJob">
+                
+                        <!--<div class="col-12">
                             <img src="../../img/profile.PNG" style="width:101%; overflow:hidden"/>
-                        </div>
+                        </div>-->
                         <div class="col-12">
-                            <h3 style="text-align:center"><b>{{candidate.job_sector}} - {{candidate.job_title}}</b></h3>
+                            <h3 style="text-align:center; color:red"><b>{{candidate.job_sector}} - {{candidate.job_title}}</b></h3>
                             <h4  style="padding:4%; font-size:110%">
                                {{candidate.job_title}} at {{candidate.current_company}} since {{candidate.current_startdate}}.
-                                <button type="button" class="btn btn-primary" style="margin:2%; cursor:default">
-                                    {{candidate.gender}}  is  {{candidate.race}} ,{{candidate.age}} Years old , and lives in {{candidate.city}}
-                                </button>
+                                {{candidate.gender}}  is  {{candidate.race}} ,{{candidate.age}} Years old , and lives in {{candidate.city}}
+                              
                               <br>
-                                
                                 <button type="button" class="btn btn-primary" style="margin:2%; cursor:default"  ng-repeat="skill in candidate.skills">{{skill.skill}} <span class="badge">{{skill.experience}} </span></button>
                             </h4>
                        
@@ -36,41 +34,13 @@
                                 <button type="button" class="btn btn-default" style="margin:2%; cursor:default" ng-repeat="hs in candidate.history"><b>{{hs.company}}</b> <span class="badge">{{hs.start_date}} - {{hs.end_date}} </span></button>
                                 </h4>
 </div>
-                    </div>
+                   
                 </div>
 
          
 
             </div>
-            <div class="row" style="padding :1%; background-color: #d8d8d8; margin:1%" ng-repeat="candidate in candidatesLS | filter:searchJob">
-
-                <div class="col-md-2">
-                    <img src="../../img/pp.png" alt="Nature" style="width:100%">
-                </div>
-                <div class="col-md-4">
-                    <br>
-                    <b>Gender</b> : {{candidate.gender}}<br>
-                    <b>Race</b> : {{candidate.race}}<br>
-                    <b>Age</b> : {{candidate.dob}}<br>
-                    <b>Citizenship</b> :{{candidate.citizenship}}<br>
-                    <b>Job sector</b> : {{candidate.job_sector}}<br>
-                    <b>Job title</b> : {{candidate.job_title}}<br>
-
-                </div>
-                <div class="col-md-4">
-                    <h4>Job History</h4>
-                    <div class="history" ng-repeat="hs in candidate.history">
-
-                        <b>{{hs.company}}</b> <br>
-                        {{hs.start_date}} - {{hs.end_date}}<br>
-                        {{hs.job_duties}}<br>
-                    </div>
-
-
-                </div>
-
-            </div>
-
+      
 
         </div>
 

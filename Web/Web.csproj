@@ -157,6 +157,8 @@
     <Content Include="img\clients\05.png" />
     <Content Include="img\clients\06.png" />
     <Content Include="img\favicon.ico" />
+    <Content Include="img\hire.jpg" />
+    <Content Include="img\interview.jpg" />
     <Content Include="img\logo-dark.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\logoq.PNG" />
