@@ -13,6 +13,35 @@
                     </form>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-4" style="margin:2%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" ng-repeat="candidate in candidatesLS | filter:searchJob">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../../img/profile.PNG" style="width:101%; overflow:hidden"/>
+                        </div>
+                        <div class="col-12">
+                            <h3 style="text-align:center"><b>{{candidate.job_sector}} - {{candidate.job_title}}</b></h3>
+                            <h4  style="padding:4%; font-size:110%">
+                               {{candidate.job_title}} at {{candidate.current_company}} since {{candidate.current_startdate}}.
+                                <button type="button" class="btn btn-primary" style="margin:2%; cursor:default">
+                                    {{candidate.gender}}  is  {{candidate.race}} ,{{candidate.age}} Years old , and lives in {{candidate.city}}
+                                </button>
+                              <br>
+                                
+                                <button type="button" class="btn btn-primary" style="margin:2%; cursor:default"  ng-repeat="skill in candidate.skills">{{skill.skill}} <span class="badge">{{skill.experience}} </span></button>
+                            </h4>
+                       
+                            <h3 style="text-align:center"><b>Previous employment</b></h3>
+                            <h4 style="padding:4%; font-size:110%">
+                                <button type="button" class="btn btn-default" style="margin:2%; cursor:default" ng-repeat="hs in candidate.history"><b>{{hs.company}}</b> <span class="badge">{{hs.start_date}} - {{hs.end_date}} </span></button>
+                                </h4>
+</div>
+                    </div>
+                </div>
+
+         
+
+            </div>
             <div class="row" style="padding :1%; background-color: #d8d8d8; margin:1%" ng-repeat="candidate in candidatesLS | filter:searchJob">
 
                 <div class="col-md-2">

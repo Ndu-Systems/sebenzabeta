@@ -162,6 +162,7 @@
     <Content Include="img\logoq.PNG" />
     <Content Include="img\posts.PNG" />
     <Content Include="img\pp.png" />
+    <Content Include="img\profile.PNG" />
     <Content Include="img\widgets\gmap-pin.png" />
     <Content Include="index.html" />
     <Content Include="js\components\google-map.js" />
