@@ -166,6 +166,65 @@ app.controller('jobAssignCandidateController', function ($http, $scope, $window)
         });      
     });
 
+    $scope.GetSelectedCandidate = function (candidate) {
+        $scope.name = candidate.name;
+        $scope.surname = candidate.surname;
+        $scope.email = candidate.email;
+        $scope.cell = candidate.cell;
+        $scope.identity = candidate.identity;
+        $scope.title = candidate.title;
+        $scope.jobCatergory = candidate.jobCatergory;
+        $scope.jobTitle = candidate.jobTitle;
+        $scope.jobDescription = candidate.jobDescription;
+        $scope.expirience = candidate.expirience;
+        $scope.cv = candidate.cv;
+        $scope.city = candidate.city;
+        $scope.id = candidate.id;
+        var status = "in progress";
+    }
+
+    $scope.Assign = function (candidate) {
+        $scope.id = candidate.id;
+        $scope.email = candidate.email;
+        var status = "in progress";
+
+        var id = $scope.id;
+        var email = $scope.email;
+        var companyName = $scope.jobCompanyName;
+        var Location = $scope.jobLocation;
+        var Status = status;
+        var JobId = $scope.jobId;
+
+        if (JobId === undefined) {
+            $scope.error = "Job Post not Selected";
+        }
+        else {
+            var data = {
+                id: id,
+                email: email,
+                companyName: companyName,
+                Location: Location,
+                Status: Status,
+                JobId: JobId
+            };
+            $http.post(GetApiUrl("Job_CandidateAssign"), data)
+            .success(function (response, status) {
+                if (response === "1") {
+                    // seuccess
+                    localStorage.setItem("succes", "Candidate details updated successfully");
+                    localStorage.setItem("url", "#jobAssignCandidate");
+                    $window.location.href = "#succes";
+                    //end success
+                } else {
+                    $scope.message = response;
+                }
+            });
+        }
+    }
+
+});
+app.controller('candidateAssignToJobtController', function ($http, $scope, $window) {
+
 });
 app.controller('clientEditController', function ($http, $scope, $window) {
 
