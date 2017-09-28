@@ -148,6 +148,10 @@
     <Content Include="img\970x647\01.jpg" />
     <Content Include="img\970x647\02.jpg" />
     <Content Include="img\970x647\03.jpg" />
+    <Content Include="img\bg1.jpg" />
+    <Content Include="img\bg2.jpg" />
+    <Content Include="img\bg3.jpg" />
+    <Content Include="img\bg4.jpg" />
     <Content Include="img\bg_sebenza.PNG" />
     <Content Include="img\candudates.PNG" />
     <Content Include="img\clients\01.png" />
