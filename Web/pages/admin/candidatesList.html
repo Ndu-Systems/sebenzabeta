@@ -41,54 +41,112 @@
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th>Full Name</th>
-                    <th>Address</th>
+                    <th>Title</th>
+                    <th>Full Name</th>                 
                     <th>Email</th>
                     <th>Cell</th>
-                    <th>Sector</th>
-                    <th>Role</th>
+                    <th>Sector</th>             
                     <th>Experience</th>
                     <th>City</th>
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Freedom Khanyile</td>
-                    <td>South Africa </td>
-                    <td>john@example.com</td>
-                    <td>27746520052</td>
-                    <td>Informaion Technology</td>
-                    <td>Junior Developer</td>
-                    <td>2 years</td>
-                    <td>Randburg</td>
-                    <td><button type="submit" class="btn btn-success">Edit</button> | <button type="submit" class="btn btn-primary">View</button></td>
-                </tr>
-                <tr>
-                    <td>Freedom Khanyile</td>
-                    <td>South Africa </td>
-                    <td>john@example.com</td>
-                    <td>27746520052</td>
-                    <td>Informaion Technology</td>
-                    <td>Junior Developer</td>
-                    <td>2 years</td>
-                    <td>Randburg</td>
-                    <td><button type="submit" class="btn btn-success">Edit</button> | <button type="submit" class="btn btn-primary">View</button></td>
-                </tr>
-                <tr>
-                    <td>Freedom Khanyile</td>
-                    <td>South Africa </td>
-                    <td>john@example.com</td>
-                    <td>27746520052</td>
-                    <td>Informaion Technology</td>
-                    <td>Junior Developer</td>
-                    <td>2 years</td>
-                    <td>Randburg</td>
-                    <td><button type="submit" class="btn btn-success">Edit</button> | <button type="submit" class="btn btn-primary">View</button></td>
-                </tr>
+            <tbody>                 
+                <tr ng-repeat="candidate in candidates">
+                    <td>{{candidate.title}}</td>
+                    <td>{{candidate.name}}  {{candidate.surname}}</td>
+                    <td>{{candidate.email}}</td>
+                    <td>{{candidate.cell}}</td>
+                    <td>{{candidate.jobCatergory}}</td>
+                    <td>{{candidate.expirience}}</td>                        
+                    <td>{{candidate.city}}</td>          
+                 
+                    <td><button type="submit" class="btn btn-success" ng-click="GetSelected(candidate)">Edit Info</button> | <button type="submit" class="btn btn-primary" ng-click="GetInterviews(candidate)">View Interview</button></td>
+                    </tr>
             </tbody>
         </table>
         <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-9 col-sm-12">
+                <form class="form-horizontal" ng-show="show">
+                    <div>
+                        <h3 class="w3l-title">Edit - {{name}} {{surname}} - Information</h3>
+                    </div>
+                    <fieldset>                        
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Title</label>
+                            <div class="col-lg-10">
+                                <input type="text" disabled class="form-control" ng-model="title">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">First Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" disabled class="form-control" ng-model="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Last Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" disabled class="form-control" ng-model="surname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="email" disabled class="form-control" ng-model="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Cell Number</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="cell">
+                            </div>
+                        </div>                                          
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">City</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Experience</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="expirience">
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Sector</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="jobCatergory">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Job Title</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" ng-model="jobTitle">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Interview Status</label>
+                            <div class="col-lg-10">
+                                <input type="text" disabled class="form-control" ng-model="Status">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-success" ng-click="Update()">Update</button>
+                                <button type="submit" class="btn btn-warning" ng-click="Remove()">Remove</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><div class="col-md-3 col-lg-12"></div>
+        </div>
     </div>
+    <div class="footer">
+        <a href="#/admin-dashboard">
+            <span class="glyphicon glyphicon-home"></span>
+        </a>
     </div>
-</div>
+ </div>

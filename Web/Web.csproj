@@ -148,6 +148,10 @@
     <Content Include="img\970x647\01.jpg" />
     <Content Include="img\970x647\02.jpg" />
     <Content Include="img\970x647\03.jpg" />
+    <Content Include="img\bg1.jpg" />
+    <Content Include="img\bg2.jpg" />
+    <Content Include="img\bg3.jpg" />
+    <Content Include="img\bg4.jpg" />
     <Content Include="img\bg_sebenza.PNG" />
     <Content Include="img\candudates.PNG" />
     <Content Include="img\clients\01.png" />
@@ -183,7 +187,7 @@
     </Content>
     <Content Include="pages\account\login.html" />
     <Content Include="pages\admin\admin-dashboard.html" />
-    <Content Include="pages\admin\candidateEdit.html" />
+    <Content Include="pages\admin\candidateInterview.html" />
     <Content Include="pages\admin\candidatesList.html" />
     <Content Include="pages\admin\clientEdit.html" />
     <Content Include="pages\admin\clients.html" />
@@ -236,6 +240,7 @@
     <Content Include="api\Api_temp\uploads\1505399707id.pdf" />
     <Content Include="api\Api_temp\uploads\1505819021Ndumiso Mthembu CV.pdf" />
     <Content Include="api\Job_CandidateAssign.php" />
+    <Content Include="api\candidate_update.php" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

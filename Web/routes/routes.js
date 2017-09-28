@@ -69,9 +69,9 @@
          templateUrl: 'pages/admin/candidatesList.html',
          controller: 'candidatesListController'
      })
-     .when('/candidateEdit', {
-         templateUrl: 'pages/admin/candidateEdit.html',
-         controller: 'candidateEditController'
+     .when('/candidateInterview', {
+         templateUrl: 'pages/admin/candidateInterview.html',
+         controller: 'candidateInterviewController'
      })
 });
  
