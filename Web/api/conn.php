@@ -7,10 +7,9 @@ $dbname = "sebenza";
 
 
 //$servername = "127.0.0.1";
-//$username = "possib0_admin";
-//$password = "J9CR1ATpzgp8Vcs";
-//$dbname = "possib0_poss";
-
+//$username = "ndusys0_admin1";
+//$password = "Harder01!";
+//$dbname = "ndusys0_sebenza";
 
 $conn = new mysqli($servername, $username, $password,$dbname);
 

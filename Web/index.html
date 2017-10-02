@@ -11,7 +11,7 @@
         <meta content="" name="author"/>
 
         <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
         <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
@@ -40,6 +40,8 @@
         <script src="controllers/homeController.js"></script>
         <script src="controllers/recrutementController.js"></script>
         <script src="controllers/administratorController.js"></script>
+        <script src="controllers/successController.js"></script>
+        <script src="controllers/trainingController.js"></script>
         <!--End of Controllers-->
 
     </head>
@@ -50,7 +52,7 @@
 
         <header class="header navbar-fixed-top">
             <!-- Navbar -->
-            <nav class="navbar" role="navigation">
+            <nav class="navbar" role="navigation" style="background-color:black">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="menu-container js_nav-item">
@@ -78,7 +80,7 @@
                                 <!--<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#/service">Services</a></li>-->
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#/contact">Contact</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#/login">Login</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#/scrape">CV scrape</a></li>
+                                <li class="js_nav-item nav-item" ng-show="false"><a class="nav-item-child nav-item-hover" href="#/scrape">CV scrape</a></li>
                             </ul>
                         </div>
                     </div>
