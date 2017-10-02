@@ -8,7 +8,17 @@
         <!-- Masonry Grid -->
         <div class="myBox">
             <div class="row">
-                <h1></h1>
+                <div class="col-ms-12" style="text-align:center; margin-bottom:10%;">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning" >Personal information</button>
+                        <button type="button" class="btn btn-default" disabled>Work history</button>
+                        <button type="button" class="btn btn-default" disabled>Education</button>
+                        <button type="button" class="btn btn-default" disabled>Uploads</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              
 
                 <div class="col-sm-6">
                     <form>
@@ -25,27 +35,35 @@
                             <input type="email" class="form-control myInputs" ng-model="cell">
                         </div>
 
+                   
+
+                     
+
                     </form>
 
                 </div>
                 <div class="col-sm-6">
                     <form>
                         <div class="form-group">
-                            <label for="email">Job Sector</label>
-                            <input type="text" class="form-control myInputs" ng-model="sector">
+                            <label for="pwd">Gender</label>
+                            <select type="text" class="form-control myInputs" ng-model="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Job Title</label>
-                            <input type="text" class="form-control myInputs" ng-model="title">
+                            <label for="pwd">ID No.</label>
+                            <input type="text" class="form-control myInputs" ng-model="id_no">
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Job Title</label>
-                            <input type="text" class="form-control myInputs" ng-model="title">
+                            <label for="email">	Citizenship</label>
+                            <input type="text" class="form-control myInputs" ng-model="citizenship">
                         </div>
+                    
                      
                     </form>
                 </div>
-                <button type="submit" class="btn btn-default" ng-click="Register_Candidate()">Register</button>
+                <button type="submit" style="float:right" class="btn btn-default" ng-click="Register_Candidate()">Register</button>
             </div>
         </div>
 
