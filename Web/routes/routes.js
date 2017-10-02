@@ -103,4 +103,8 @@
          templateUrl: 'pages/account/addcompay_one.html',
          controller: 'addCandidateController'
      })
+      .when('/Setas', {
+          templateUrl: 'pages/training/setas.html',
+          controller: 'trainingController'
+      })
 });

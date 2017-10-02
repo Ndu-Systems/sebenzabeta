@@ -1,21 +1,76 @@
 ﻿<div id="">
+    <section class="mainp4" style="background-image:url('../../img/headings/welcome.PNG')">
+        <div class="homediv">
+            <h1>    Our Training Portal </h1>
+            <h3> We are an accredited training provider with <a style="color:green" href="#/Setas">numerous Setas.</a></h3>
+        </div>
+    </section>
     <div class="content-lg container">
+        
 
-        <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-heading"><h1 style="cursor:pointer" data-toggle="collapse" data-target="#courses">Our course</h1></div>
+                <div class="panel-body">
+                    <div id="courses" class="collapse">
+                        <table class="table">
 
-           
-            <div class="col-sm-12">
-                <h1 style="color:black; text-align:center">
-                    Our Training Portal - under construction
+                            <tbody>
+                                <tr ng-repeat="course in courses">
+                                    <td><b>{{course.sector}}</b></td>
+                                    <td><button class="btn btn-success">More</button></td>
 
-                </h1>
+                                </tr>
 
-            </div> 
-            </div> 
-    </div> 
-  
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+            </div>
+          
+
+
+        </div>
+
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-heading"><h1 style="cursor:pointer" data-toggle="collapse" data-target="#qualifications">Qualifications</h1></div>
+                <div class="panel-body">
+                    <div id="qualifications" class="collapse">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><h3>SAQA ID</h3></th>
+                                    <th><h3>QUALIFICATIONS</h3></th>
+                                    <th><h3>LEVEL</h3></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="qualification in qualifications">
+                                    <td><b>{{qualification.saqa_id}}</b></td>
+                                    <td><b>{{qualification.qualifications}}</b></td>
+                                    <td><b>{{qualification.level}}</b></td>
+                                    <td><button class="btn btn-success">More</button></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
 </div>
 
- 
- 
 

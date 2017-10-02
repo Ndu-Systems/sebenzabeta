@@ -102,6 +102,7 @@
     <Content Include="api\conn.php" />
     <Content Include="api\Contact_Save.php" />
     <Content Include="api\get.php" />
+    <Content Include="api\get_distict.php" />
     <Content Include="controllers\successController.js" />
     <Content Include="controllers\administratorController.js" />
     <Content Include="controllers\recrutementController.js" />
@@ -190,6 +191,7 @@
     <Content Include="pages\recrutement\reg_company.html" />
     <Content Include="pages\recrutement\scrape.html" />
     <Content Include="pages\succes.html" />
+    <Content Include="pages\training\setas.html" />
     <Content Include="pages\training\training.html" />
     <Content Include="routes\routes.js" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
