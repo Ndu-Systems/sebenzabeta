@@ -141,6 +141,7 @@
     <Content Include="img\clients\05.png" />
     <Content Include="img\clients\06.png" />
     <Content Include="img\favicon.ico" />
+    <Content Include="img\headings\contact.PNG" />
     <Content Include="img\headings\reg.PNG" />
     <Content Include="img\headings\welcome.PNG" />
     <Content Include="img\hire.jpg" />
