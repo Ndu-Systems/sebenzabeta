@@ -17,9 +17,9 @@
              controller: 'homeController'
          })
         .when('/login', {
-             templateUrl: 'pages/account/login.html',
-             controller: 'loginController'
-         })
+            templateUrl: 'pages/account/login.html',
+            controller: 'loginController'
+        })
          .when('/logout', {
              templateUrl: 'pages/account/logout.html',
              controller: 'logoutController'
@@ -84,8 +84,8 @@
           controller: 'enquireController'
       })
       .when('/regiter-candidate', {
-          templateUrl: 'pages/recrutement/reg_candidate.html',
-          controller: 'enquireController'
+          templateUrl: 'pages/account/addcandidate_one.html',
+          controller: 'addCandidateController'
       })
       .when('/regiter-company', {
           templateUrl: 'pages/recrutement/reg_company.html',
@@ -95,4 +95,12 @@
            templateUrl: 'pages/training/training.html',
            controller: 'trainingController'
        })
+    .when('/register', {
+        templateUrl: 'pages/account/register.html',
+        controller: 'addCandidateController'
+    })
+     .when('/regiter-company', {
+         templateUrl: 'pages/account/addcompay_one.html',
+         controller: 'addCandidateController'
+     })
 });

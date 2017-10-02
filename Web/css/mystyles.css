@@ -97,10 +97,32 @@
     color: #000;
     background-color: #FFF;
 }
-
+.mainp4 {
+    position: relative;
+    height: 400px;
+     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homediv {
+       font-family: "Trebuchet MS";
+    text-transform: uppercase;
+    position: absolute;
+    left: 31%;
+    top: 50%;
+}
+.homediv h1 {
+    font-family: "Trebuchet MS";
+    color: white;
+}
+.homediv h3 {
+    font-family: "Trebuchet MS";
+    color: white;
+}
 @media screen and (max-width: 480px) {
     body{
-        background:red;
+        /*background:red;*/
     }
     .img-responsive {
        height: 756px !important;
