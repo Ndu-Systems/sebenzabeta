@@ -1,0 +1,41 @@
+﻿<div id="about">
+    <div class="content-lg container">
+        <!-- Masonry Grid -->
+        <div class="myBox">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-6">
+                    <h1>{{job}} position</h1>
+                    <h3>Submit details form call back</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Name </label>
+                            <input type="text" class="form-control myInputs" ng-model="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control myInputs" ng-model="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Cell No.</label>
+                            <input type="text" class="form-control myInputs" ng-model="cell">
+                        </div>
+
+                        <button type="submit" class="btn btn-default" ng-click="Submit()">Submit</button>
+                    </form>
+                    <p style="padding:1%;color:indianred">{{message}}</p>
+                    <h4>
+                        <a style="color:green" class="nav-item-child nav-item-hover" href="#/login">Login</a>
+                        Or
+                        <a  style="color:green" class="nav-item-child nav-item-hover" href="#/regiter-candidate">Register</a>
+                     </h4>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+
+        <!-- End Masonry Grid -->
+    </div>
+
+</div>
+<!-- End About -->

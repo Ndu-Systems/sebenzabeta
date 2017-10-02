@@ -97,3 +97,12 @@
     color: #000;
     background-color: #FFF;
 }
+
+@media screen and (max-width: 480px) {
+    body{
+        background:red;
+    }
+    .img-responsive {
+       height: 756px !important;
+    }
+}

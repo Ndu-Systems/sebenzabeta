@@ -41,10 +41,7 @@
          templateUrl: 'pages/recrutement/jobs.html',
          controller: 'jobsController'
      })
-     .when('/jobs', {
-         templateUrl: 'pages/recrutement/jobs.html',
-         controller: 'jobsController'
-     })
+    
      .when('/admin-dashboard', {
          templateUrl: 'pages/admin/admin-dashboard.html',
          controller: 'administratorController'
@@ -73,5 +70,29 @@
          templateUrl: 'pages/admin/candidateInterview.html',
          controller: 'candidateInterviewController'
      })
+      .when('/I-am-Interested', {
+          templateUrl: 'pages/recrutement/IamInterested.html',
+          controller: 'iamInterestedController'
+      })
+      .when('/succes', {
+          templateUrl: 'pages/succes.html',
+          controller: 'succesController'
+      })
+
+      .when('/Enquire', {
+          templateUrl: 'pages/recrutement/enquire.html',
+          controller: 'enquireController'
+      })
+      .when('/regiter-candidate', {
+          templateUrl: 'pages/recrutement/reg_candidate.html',
+          controller: 'enquireController'
+      })
+      .when('/regiter-company', {
+          templateUrl: 'pages/recrutement/reg_company.html',
+          controller: 'enquireController'
+      })
+       .when('/training', {
+           templateUrl: 'pages/training/training.html',
+           controller: 'trainingController'
+       })
 });
- 

@@ -1,1 +1,51 @@
-﻿
+﻿<div id="">
+    <div class="content-lg container">
+        <!-- Masonry Grid -->
+        <div class="myBox">
+            <div class="row">
+                <div class="col-sm-12"><h1 style="text-align:center">AVAILABLE POSTS</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="background-color:#337ab7; padding:2%; margin:2%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <form>
+                        <input type="text" class="form-control myInputs" ng-model="searchJob" placeholder="Search Job by name , skill , location ...">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="background-color:#d6d9da; padding:1%; margin:2%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" ng-repeat="job in jobs | filter:searchJob">
+
+                    <!--<div class="col-12">
+                        <img src="../../img/profile.PNG" style="width:101%; overflow:hidden"/>
+                    </div>-->
+                    <div class="col-12">
+                        <h3 style="text-align:center; color:red"><b><u>{{job.description}}-{{job.location}}</u> </b></h3>
+                        <h4 style="padding:1%; font-size:110%">
+                           <b style="color:red"> Position Overview</b> <br>
+                          {{job.overview}}
+                           
+                        </h4>
+
+                        <h4 style="padding:1%; font-size:110%">
+                           
+                            <b style="color:red"> Requirements</b> <br>
+                            {{job.requirements}}
+
+                        </h4>
+                        <h4 style="padding:1%; font-size:110%">
+
+                           
+
+                            <b style="color:red"> Qualifications</b> <br>
+                            {{job.qualifications}}
+                        </h4>
+                      
+                            <button style="float:right" type="button" class="btn btn-primary" ng-click="IamInterested(job)">I am interested </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -32,13 +32,13 @@ html, html a, body {
 
 body {
   position: relative;
-  font-family: 'Poiret One';
+  font-family: 'Calibri';
 }
 
 p {
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Poiret One';
+  font-family: 'Calibri';
   color: #a6a7aa;
   line-height: 1.4;
   margin-bottom: 15px;
@@ -49,12 +49,12 @@ li,
 li a {
   font-size: 16px;
   font-weight: 500;
-   font-family: 'Poiret One';
+   font-family: 'Calibri';
   color: #515769;
 }
 
 a {
- font-family: 'Poiret One';  color: #81848f;
+ font-family: 'Calibri';  color: #81848f;
   outline: 0;
 }
 
@@ -68,7 +68,7 @@ a:focus, a:hover, a:active {
   position: relative;
   font-size: 13px;
   font-weight: 600;
- font-family: 'Poiret One';  text-transform: uppercase;
+ font-family: 'Calibri';  text-transform: uppercase;
 }
 
 .link:after {
@@ -84,12 +84,12 @@ a:focus, a:hover, a:active {
 span {
   font-size: 14px;
   font-weight: 400;
- font-family: 'Poiret One';  color: #bfc1c7;
+ font-family: 'Calibri';  color: #bfc1c7;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
- font-family: 'Poiret One';  color: #515769;
+ font-family: 'Calibri';  color: #515769;
   line-height: 1.4;
   margin: 0 0 15px;
 }
@@ -708,7 +708,7 @@ fieldset[disabled] .btn-theme {
   display: block;
   font-size: 13px;
   font-weight: 600;
- font-family: 'Poiret One';
+ font-family: 'Calibri';
    color: #fff;
   text-transform: uppercase;
   line-height: 55px;
